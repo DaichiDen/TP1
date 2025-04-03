@@ -18,4 +18,38 @@
 -git diff est un outil de comparaison entre deux éléments. Les éléments peuvent être des commits ou des branches. On peut faire des git diff commit/commit , commit/branche et vice versa.
 
 -git log affiche tous les commits réalisés dans la branche actuelle, elle affiche aussi leur hash qui permet d'utiliser git show, par exemple.
+
+8) 
+
+#Pré-reset du fichier brouillon.txt 
+
+daich@Kyur4Th3Itch MINGW64 ~/Desktop/Ecole/Git/TP1 (master)
+$ git status
+On branch master
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        new file:   brouillon.txt
+        new file:   fichier1.txt
+
+
+daich@Kyur4Th3Itch MINGW64 ~/Desktop/Ecole/Git/TP1 (master)
+
+-----------------------------------------------------------
+
+#Post-reset du fichier brouillon.txt
+
+daich@Kyur4Th3Itch MINGW64 ~/Desktop/Ecole/Git/TP1 (master)
+$ git status
+On branch master
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        new file:   fichier1.txt
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        brouillon.txt
+
+
+daich@Kyur4Th3Itch MINGW64 ~/Desktop/Ecole/Git/TP1 (master)
+
  
