@@ -85,4 +85,5 @@ Date:   Thu Apr 3 18:52:10 2025 +0200
     Ajout du fichier1.txt qui est le fichier à garder
 
 
-11) 
+11) J'ai utilisé git log pour avoir tous les commits faits, j'ai vérifié le plus récent avec git show "fdda" et ensuite j'ai fait un git status pour voir si tout était à jour.
+
