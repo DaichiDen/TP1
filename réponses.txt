@@ -87,3 +87,34 @@ Date:   Thu Apr 3 18:52:10 2025 +0200
 
 11) J'ai utilisé git log pour avoir tous les commits faits, j'ai vérifié le plus récent avec git show "fdda" et ensuite j'ai fait un git status pour voir si tout était à jour.
 
+12) On peut faire git log origin/master (dans mon cas car j'ai pas fait la branche develop)
+
+13) git clone https://github.com/PaulineLam24/TP-Git
+
+14) 
+-On trouve seulement un fichier README.md
+-On trouve 3 commits:
+	-Correctif README.md
+	-Ajout dans README.md
+	-Initial commit
+-On fait d'abord un cd pour se placer dans ce nouveau repo cloné, ensuite git log suffit à afficher tous les commits ainsi que leur titre.
+
+15) On peut utiliser git log pour récupérer les hash puis faire :
+	git diff 9b68 f7a7
+	git diff f7a7 f813
+
+On peut utiliser git log -p aussi.
+
+Le premier commit ne "fait" rien
+Le second ajoute deux lignes de texte dans le readme:
+	+# TP-Git
+	+# Ceci est un fichier README.md...
+
+Le troisième enlève le "#" de la deuxième ligne du Readme afin que cette ligne s'affiche en texte et non pas en titre:
+	-# Ceci est un fichier README.md...
+	+	
+	+Ceci est un fichier README.md...
+
+
+
+	
