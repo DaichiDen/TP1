@@ -1,5 +1,21 @@
-1) La commande status sert à afficher l'état général du repositoire , elle sert à savoir quels fichiers ont été commit ,lesquels doivent être ajoutés à la staging area, les différences entre ta branche actuelle et la branche master. Dans notre cas , il y est affiché qu'il n'y a pas encore de commit "no commits yet" et qu'il faudrait ajouter les fichiers readme et réponses.txt à la staging area avec un add
+1) La commande status sert à afficher l'état général de la branche actuelle , elle sert à savoir quels fichiers ont été commit ,lesquels doivent être ajoutés à la staging area, les différences entre ta branche actuelle et la branche master. Dans notre cas , il y est affiché qu'il n'y a pas encore de commit "no commits yet" et qu'il faudrait ajouter les fichiers readme et réponses.txt à la staging area avec un add
 
 2) On remarque que les fichiers README et réponses sont passés de rouge(fichiers présents dans le dossier actuel) à vert, ils ont été ajoutés à la staging area , désormais git nous les indique comme "changes to be commited" , on doit donc utiliser un commit pour les rajouter au local repository, l'endroit qui stocke les commits.
 
-3) 
+3) Dans la zone d'index (staging area)
+
+4) -
+
+5) J'ai utilisé la commande git log qui affiche tous les commits effectués.
+
+6)Comme le nom l'indique git diff --staged agit comme git diff , mais ça montre les différences entre le staging area et le dernier commit. Tandis que , git diff montre les différences entre le dossier actuel et le staging area.
+
+7)
+-git show prends en paramètre un hash , elle montre la modification qui a été effectué avec ce commit, ici git show B10a (le hash du deuxième commit pour moi) montre que le fichier affecté est README.md et en vert est affiché "Ajout d'une deuxième ligne", la ligne de texte précédemment ajouté.
+
+-git status quand à lui montre l'état général de la branche actuelle, elle n'affiche donc rien si il n'y a rien à add et si il n'y aucun commit, si il y a alors la commande va nous aider et nous dire ce qu'on doit commit et ce qu'on doit add.
+
+-git diff est un outil de comparaison entre deux éléments. Les éléments peuvent être des commits ou des branches. On peut faire des git diff commit/commit , commit/branche et vice versa.
+
+-git log affiche tous les commits réalisés dans la branche actuelle, elle affiche aussi leur hash qui permet d'utiliser git show, par exemple.
+ 
