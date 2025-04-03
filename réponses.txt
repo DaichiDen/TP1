@@ -1,0 +1,5 @@
+1) La commande status sert à afficher l'état général du repositoire , elle sert à savoir quels fichiers ont été commit ,lesquels doivent être ajoutés à la staging area, les différences entre ta branche actuelle et la branche master. Dans notre cas , il y est affiché qu'il n'y a pas encore de commit "no commits yet" et qu'il faudrait ajouter les fichiers readme et réponses.txt à la staging area avec un add
+
+2) On remarque que les fichiers README et réponses sont passés de rouge(fichiers présents dans le dossier actuel) à vert, ils ont été ajoutés à la staging area , désormais git nous les indique comme "changes to be commited" , on doit donc utiliser un commit pour les rajouter au local repository, l'endroit qui stocke les commits.
+
+3) 
