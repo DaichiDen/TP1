@@ -52,4 +52,33 @@ Untracked files:
 
 daich@Kyur4Th3Itch MINGW64 ~/Desktop/Ecole/Git/TP1 (master)
 
- 
+9) git reset implique 2 zones de git, le working directory (le dossier actuel ,physique (hors git)) ainsi que le staging area, une fois qu'on fait add sur un fichier il sera rajouté à la staging area depuis le working directory, une fois la commande git reset faite sur le fichier, il sera enleve de la staging area et il sera de nouveau pas présent sur git mais seulement dans le working directory.
+
+
+10) On peut faire la commande git status, après le commit du fichier1.txt elle devrait nous dire que brouillon.txt est "untracked" c-à-d qu'il est présent seulement sur le working directory,il serait donc en rouge.
+Après test voici le résultat obtenu, qui semble correspondre à mes attentes.
+-----------------------------------------------------------
+#Post-commit
+
+daich@Kyur4Th3Itch MINGW64 ~/Desktop/Ecole/Git/TP1 (master)
+$ git status
+On branch master
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        brouillon.txt
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+daich@Kyur4Th3Itch MINGW64 ~/Desktop/Ecole/Git/TP1 (master)
+
+-----------------------------------------------------------
+daich@Kyur4Th3Itch MINGW64 ~/Desktop/Ecole/Git/TP1 (master)
+$ git log
+commit 25ede0360e7586ad1e1bd06924c5f4d79257ea2b (HEAD -> master)
+Author: Denis ZAPOI <daichiden2005@gmail.com>
+Date:   Thu Apr 3 18:52:10 2025 +0200
+
+    Ajout du fichier1.txt qui est le fichier à garder
+
+
+11) 
